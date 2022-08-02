@@ -18,8 +18,8 @@ import lombok.ToString;
 @Document(value = "clientemails")
 public class ClientEmail {
 
-	private EmailTypeEnum emailType;
-	
-	private String email;
-	
+  private EmailTypeEnum emailType;
+
+  private String email;
+
 }

@@ -18,8 +18,8 @@ import lombok.ToString;
 @Document(value = "clientphones")
 public class ClientPhone {
 
-	private PhoneTypeEnum phoneType;
-	
-	private String phoneNumber;
-	
+  private PhoneTypeEnum phoneType;
+
+  private String phoneNumber;
+
 }

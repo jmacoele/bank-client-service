@@ -17,10 +17,10 @@ import lombok.ToString;
 @AllArgsConstructor
 @Document(value = "clientidentitynumbers")
 public class ClientIdentityNumber {
-	
-	private IdentityNumberTypeEnum identityType;
-	
-	private String identityNumber;
-	
+
+  private IdentityNumberTypeEnum identityType;
+
+  private String identityNumber;
+
 }
 

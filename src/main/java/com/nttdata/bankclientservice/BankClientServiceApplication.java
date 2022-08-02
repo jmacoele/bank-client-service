@@ -8,8 +8,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @EnableDiscoveryClient
 public class BankClientServiceApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(BankClientServiceApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(BankClientServiceApplication.class, args);
+  }
 
 }

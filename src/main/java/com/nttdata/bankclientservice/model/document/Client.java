@@ -26,34 +26,34 @@ import lombok.ToString;
 @Document(value = "clients")
 public class Client {
 
-	@Id
-	private String id;
-	
-	private String name;
-	
-	private LocalDateTime becameCustomerDate;
-	
-	private String otherDetails;
-	
-    @CreatedDate
-    private LocalDateTime createdAt;
+  @Id
+  private String id;
 
-    @LastModifiedDate
-    private LocalDateTime updatedAt;
+  private String name;
 
-    @CreatedBy
-    private String createdBy;
+  private LocalDateTime becameCustomerDate;
 
-    @LastModifiedBy
-    private String updatedBy;
-	
-	private ClientTypeEnum clientType;
-	
-	private List<ClientIdentityNumber> identityNumbers;
-	
-	private List<ClientEmail> emails;
-	
-	private List<ClientPhone> phones;
-	
-	
+  private String otherDetails;
+
+  @CreatedDate
+  private LocalDateTime createdAt;
+
+  @LastModifiedDate
+  private LocalDateTime updatedAt;
+
+  @CreatedBy
+  private String createdBy;
+
+  @LastModifiedBy
+  private String updatedBy;
+
+  private ClientTypeEnum clientType;
+
+  private List<ClientIdentityNumber> identityNumbers;
+
+  private List<ClientEmail> emails;
+
+  private List<ClientPhone> phones;
+
+
 }
