@@ -2,6 +2,12 @@ package com.nttdata.bankclientservice.model.document.type;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
+/**
+ * Phone Type Enum.
+ *
+ * @author jmacoele
+ *
+ */
 
 public enum PhoneTypeEnum {
   HOME("H"),
@@ -14,7 +20,13 @@ public enum PhoneTypeEnum {
   public String getValue() {
     return value;
   }
-
+  /**
+   * Function of that convert string into enum value.
+   *
+   * @param value Enum value string-converted.
+   * @return PhoneTypeEnum.
+   */
+  
   @JsonCreator
   public static PhoneTypeEnum of(String value) {
     if (null == value) {

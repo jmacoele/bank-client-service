@@ -2,6 +2,12 @@ package com.nttdata.bankclientservice.model.document.type;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
+/**
+ * Email Type Enum.
+ *
+ * @author jmacoele
+ *
+ */
 
 public enum EmailTypeEnum {
   HOME("H"),
@@ -15,6 +21,12 @@ public enum EmailTypeEnum {
     return value;
   }
 
+  /**
+   * Function of that convert string into enum value.
+   *
+   * @param value Enum value string-converted.
+   * @return EmailTypeEnum.
+   */
   @JsonCreator
   public static EmailTypeEnum of(String value) {
     if (null == value) {

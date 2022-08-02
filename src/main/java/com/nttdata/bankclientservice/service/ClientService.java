@@ -1,17 +1,20 @@
 package com.nttdata.bankclientservice.service;
 
-import java.util.Objects;
-import java.util.UUID;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.nttdata.bankclientservice.model.document.Client;
 import com.nttdata.bankclientservice.model.repository.IClientRepository;
 import com.nttdata.bankclientservice.model.service.IClientService;
-
+import java.util.Objects;
+import java.util.UUID;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+/**
+ * Client Service.
+ *
+ * @author jmacoele
+ *
+ */
 
 @Service
 public class ClientService implements IClientService  {
@@ -52,7 +55,7 @@ public class ClientService implements IClientService  {
   }
 
   @Override
-  public Mono<Client> save(String id, Client client) throws Exception{
+  public Mono<Client> save(String id, Client client) throws Exception {
     return this.clientRepository.save(client);
   }
 
